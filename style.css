@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+.nav-bar {
+    font-weight: 600;
+    background-color: #70AEC294;
+    padding: 26px 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav-logo {
+    color: #417889 ;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-link a {
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    color: white;
+    padding-left: 50px;
+    width: 400;
+    font-size: 18px;
+    transition: 160ms ease-in-out;
+    
+}
+  
+.nav-link a:hover{
+    cursor: pointer;
+    color: #417889;
+}
+
+.btn-signin {
+    border: 0;
+    color: #345D6C;
+    font-weight: 700;
+    background-color: transparent;
+    padding-right: 20px;
+    transition: 100ms ease-in-out;
+}
+
+.btn-signup {
+    font-weight: 700;
+    color: #345D6C;
+    padding: 10px 25px;
+    border: 1px solid #345D6C;
+    border-radius: 50pt;
+    background-color: transparent;
+    transition: 160ms ease-in-out;
+}
+
+.btn-signin:hover {
+    cursor: pointer;
+    color: white;
+    
+}
+.btn-signup:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #417889;
+}
+
+.body-int {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 250px;
+    background-color: #649badc2;
+}
+.body-int .body-parag {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 40px;
+}
+
+.body-parag a:hover {
+    cursor: pointer;
+}
+
+.outer-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.outer-card .card {
+
+    margin: 8px 16px;
+}
+.card { 
+    --g: 4px;     /* the gap */
+--b: 12px;    /* border thickness*/
+--c:#417889; /* the color */
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+
+  .card:hover{
+    --_p: 75%;
+  filter: grayscale(0%);
+  }
+
+.card {
+    width: 300px;
+    height: 450px;
+    border: 1px solid #70AEC238;
+    background-color: #96989947;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.body-card {
+    padding-left: 10px;
+}
+
+.body-card h2 {
+    color: #345D6C;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.body-card p {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.head-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 168px;
+    background-color: #72b4c9e0;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.contact-session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    margin: 68px 90px;
+    border-top: 1px solid #dbdbdb;
+}
+.contact-title {
+    text-align: center;
+}
+.contact-items-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+}
+.contact-items {
+    width: 300px;
+}
+
+.contact-items h6,
+.contact-items p {
+    margin-left: 30%;
+}
+
+.contact-items h6 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #373F41;
+}
+.contact-items p {
+    margin-top: 9px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #373F41;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #70AEC294;
+    padding: 80px 0px;
+}
+
+.footer-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-items-container h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-items-container a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #345D6C;
+}
+
+.footer-items-container a:hover {
+    text-decoration: underline;
+}
